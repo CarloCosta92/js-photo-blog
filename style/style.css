@@ -1,0 +1,25 @@
+/******
+
+INFO SUI FONT
+
+
+*****/
+
+
+/* Titoli */
+/* font-family: "Edu TAS Beginner", cursive; */
+
+/* Date */
+/* font-family: "Sometype Mono", monospace; */
+
+/******
+
+RESET
+
+******/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
