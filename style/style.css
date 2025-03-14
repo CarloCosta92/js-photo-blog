@@ -53,11 +53,10 @@ MAIN
 *****/
 
 main {
-
     background-image: url(../img/cork.png);
     background-size: auto;
+    height: 100vh;
     font-family: "Sometype Mono", monospace;
-
 }
 
 .card {
@@ -73,3 +72,4 @@ main {
     transform: translate(50%, -25%);
 
 }
+

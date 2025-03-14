@@ -26,7 +26,7 @@ axios.get(endpoint)
     for (let i = 0; i< 6;i++){
 
         const card = document.createElement('div');
-      card.classList.add('col', 'col-4');  
+      card.classList.add('col', 'col-lg-4' ,'col-md-6','col-sm-12' );  
       cardContainer.appendChild(card);
 
       const cardMain = document.createElement('div');
