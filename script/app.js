@@ -39,6 +39,12 @@ axios.get(endpoint)
       img.alt = 'immagine';  
       cardMain.appendChild(img);
 
+      const imgPuntina = document.createElement('img');
+      imgPuntina.src = "../img/pin.svg";  
+      imgPuntina.classList.add('puntina');  
+      imgPuntina.alt = 'immagine';  
+      cardMain.appendChild(imgPuntina);
+
       const cardBody = document.createElement('div');
       cardBody.classList.add('card-body'); 
       cardMain.appendChild(cardBody);  
