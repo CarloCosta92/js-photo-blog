@@ -23,3 +23,31 @@ RESET
     padding: 0;
     box-sizing: border-box;
 }
+
+
+
+/*****
+
+BODY
+
+*****/
+
+
+/*****
+HEADER
+*****/
+
+header {
+    background-image: url(../img/wall.png);
+    
+}
+
+header h1 {
+    font-size: 4rem; 
+    font-family: "Edu TAS Beginner", cursive; 
+    font-weight: 900;
+}
+
+/*****
+MAIN 
+*****/
