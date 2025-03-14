@@ -51,3 +51,16 @@ header h1 {
 /*****
 MAIN 
 *****/
+
+main {
+
+    background-image: url(../img/cork.png);
+    background-size: auto;
+    font-family: "Sometype Mono", monospace;
+
+}
+
+
+.card {
+    padding: 20px;
+}
