@@ -18,14 +18,15 @@ RESET
 
 ******/
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    overflow: hidden;  /* tolto la barra di scorrimento */
+    overflow: hidden;
+    /* tolto la barra di scorrimento */
 }
 
 
@@ -42,12 +43,12 @@ HEADER
 
 header {
     background-image: url(../img/wall.png);
-    
+
 }
 
 header h1 {
-    font-size: 4rem; 
-    font-family: "Edu TAS Beginner", cursive; 
+    font-size: 4rem;
+    font-family: "Edu TAS Beginner", cursive;
     font-weight: 900;
 }
 
@@ -66,13 +67,13 @@ main {
     padding: 20px;
 }
 
-.card h3{
-    font-family: "Edu TAS Beginner", cursive;   
+.card h3 {
+    font-family: "Edu TAS Beginner", cursive;
     font-style: italic;
     text-transform: uppercase;
 }
 
-.puntina{
+.puntina {
     width: 50px;
     height: 50px;
     position: absolute;
@@ -87,24 +88,24 @@ OVERLAY
 *****/
 
 #overlayDiv {
-    display: none; 
-    background-color: rgba(0,0,0,0.5); 
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     width: 100%;
     height: 100%;
-    z-index: 9;  
+    z-index: 9;
 }
 
 #overlayDiv.overlay {
-    display: block; 
+    display: block;
 }
 
-.overlay{
-    background-color: rgba(0,0,0,0.5);
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 9;
     width: 100%;
     height: 100%;
-    position: fixed;    
+    position: fixed;
 }
 
 .imgOverlay {
@@ -128,12 +129,12 @@ OVERLAY
 /******
 ROTAZIONE
 ******/
-.card{
-    transition: transform 1s; 
+.card {
+    transition: transform 1s;
 }
 
 .card:hover {
-	transform:rotate(10deg) scale(1.1); 
-    box-shadow: 10px 10px 5px #424040;   
+    transform: rotate(10deg) scale(1.1);
+    box-shadow: 10px 10px 5px #424040;
     z-index: 4;
 }
