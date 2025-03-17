@@ -24,6 +24,9 @@ RESET
     box-sizing: border-box;
 }
 
+body {
+    overflow: hidden;  /* tolto la barra di scorrimento */
+}
 
 
 /*****
@@ -126,8 +129,7 @@ OVERLAY
 ROTAZIONE
 ******/
 .card{
-    transition: transform 1s;
-    
+    transition: transform 1s; 
 }
 
 .card:hover {
