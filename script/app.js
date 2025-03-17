@@ -6,15 +6,13 @@ const endpoint = "https://lanciweb.github.io/demo/api/pictures/";
 // variabile per dove mi devo legare
 const cardContainer = document.getElementById('card-container');
 
-// HTML DA CREARE
-/* <div class="col col-4">
-    <div class="cardMain">
-        <img src="" class="card-img-top" alt="">
-            <div class="card-body">
-                <p class="card-text"></p>
-            </div>
-    </div>
-</div> */
+// variabili per overlay
+const overlayDiv = document.getElementById('overlayDiv');
+const overlayImage = document.getElementById('immagineOverlay');
+
+// variabili per il bottone
+const bottoneChiudi = document.getElementById('bottone');
+
 
 //chiamata api
 
@@ -71,22 +69,22 @@ axios.get(endpoint)
   });
 
 
-// variabili per overlay
-
-const overlayDiv = document.getElementById('overlayDiv');
-const overlayImage = document.getElementById('immagineOverlay');
-
-
-// variabili per il bottone
-const bottoneChiudi = document.getElementById('bottone');
-
-
 // al click sul bottone tolgo la classe overlay
 
 bottoneChiudi.addEventListener("click", function() {
 overlayDiv.classList.remove("overlay");
 });
 
+
+// HTML DA CREARE
+/* <div class="col col-4">
+    <div class="cardMain">
+        <img src="" class="card-img-top" alt="">
+            <div class="card-body">
+                <p class="card-text"></p>
+            </div>
+    </div>
+</div> */
 
 
 
