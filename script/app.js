@@ -49,6 +49,11 @@ axios.get(endpoint)
       cardBody.classList.add('card-body'); 
       cardMain.appendChild(cardBody);  
 
+      const cardTextDate = document.createElement('p');
+      cardTextDate.classList.add('card-text');
+      cardTextDate.textContent = data[i].date;
+      cardBody.appendChild(cardTextDate);
+
       const cardText = document.createElement('p');
       cardText.classList.add('card-text');
       cardText.textContent = data[i].title;
