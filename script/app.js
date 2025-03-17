@@ -54,12 +54,40 @@ axios.get(endpoint)
       cardTextDate.textContent = data[i].date;
       cardBody.appendChild(cardTextDate);
 
-      const cardText = document.createElement('p');
+      const cardText = document.createElement('h3');
       cardText.classList.add('card-text');
       cardText.textContent = data[i].title;
       cardBody.appendChild(cardText); 
 
     }
+      // devo creare una funzione che al click mi mostri display-block alla classe overlay
+      const elementImg = document.querySelectorAll(".card-img-top");
+      elementImg.forEach((img) => {
+        img.addEventListener("click", function() {
+          overlayDiv.classList.add("overlay");   
+          overlayImage.src = img.src;
+        });
+      });   
   });
+
+
+// variabili per overlay
+
+const overlayDiv = document.getElementById('overlayDiv');
+const overlayImage = document.getElementById('immagineOverlay');
+
+
+// variabili per il bottone
+const bottoneChiudi = document.getElementById('bottone');
+
+
+// al click sul bottone tolgo la classe overlay
+
+bottoneChiudi.addEventListener("click", function() {
+overlayDiv.classList.remove("overlay");
+});
+
+
+
 
 
