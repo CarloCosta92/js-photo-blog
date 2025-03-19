@@ -86,6 +86,40 @@ bottoneChiudi.addEventListener("click", function () {
     </div>
 </div> */
 
+/*****
+ SOLUZIONE CON INNER HTML
+ *****/
 
+//  axios.get(endpoint)
+//  .then((response) => {
+//    const data = response.data;
+//    let cardHtml = '';
+
+//    for (let i = 0; i < 6; i++) {
+//      cardHtml += `
+//        <div class="col col-lg-4 col-md-6 col-sm-12">
+//          <div class="card">
+//            <img src="${data[i].url}" class="card-img-top" alt="immagine">
+//            <img src="../img/pin.svg" class="puntina" alt="immagine">
+//            <div class="card-body">
+//              <p class="card-text">${data[i].date}</p>
+//              <h3 class="card-text">${data[i].title}</h3>
+//            </div>
+//          </div>
+//        </div>
+//      `;
+//    }
+
+//    cardContainer.innerHTML = cardHtml;
+
+//    
+//    const elementImg = document.querySelectorAll(".card-img-top");
+//    elementImg.forEach((img) => {
+//      img.addEventListener("click", function () {
+//        overlayDiv.classList.add("overlay");
+//        overlayImage.src = img.src;
+//      });
+//    });
+//  });
 
 
